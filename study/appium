@@ -1,0 +1,12 @@
+adb devices    /用adb查看电脑链接那些设备
+adb logcat     /查看日志
+appPackage     /安卓内包名称
+appActivity    /打开app的页面
+platformName   /测试平台安卓还是ios
+deviceName     /安卓设备名称
+
+
+adb logcat | grep -i displayed /抓取日志 查看包中信息
+样式：
+        05-26 10:06:00.793  2168  2188 I ActivityManager: Displayed com.android.browser/.BrowserActivity: +466ms
+                                                          appPackage                    appActivity
