@@ -5,6 +5,8 @@ appActivity    /打开app的页面
 platformName   /测试平台安卓还是ios
 deviceName     /安卓设备名称
 noReset        /不清除上次记录
+dontStopAppOnReset  /启用appium不重新退出app
+back            /返回上级页面
 使用adb 抓安卓的包
 adb shell logcat | grep -i displayed   //查找安卓包名称
     adb shell "ps | grep 安卓包名"      //查找安卓id
@@ -14,4 +16,4 @@ adb logcat | grep -i displayed /抓取日志 查看包中信息
 adb shell am start -W -n com.android.browser/.BrowserActivity -S  // 启动应用
 样式：
         05-26 10:06:00.793  2168  2188 I ActivityManager: Displayed com.android.browser/.BrowserActivity: +466ms
-                                                                         appPackage                    appActivity
+                                                                         appPackage         appActivity

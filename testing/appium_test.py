@@ -5,6 +5,7 @@ class AppiumTest:
             "platformName" :'Android',
             "deviceName":'127.0.0.1:52001',
             'appPackage':'',
-            'appActivity':''
+            'appActivity':'',
+            'noReset':True
         }
         self.driver=webdriver.Remote('http://127.0.0.1:4723/wb/hub',self.desire_cap)
